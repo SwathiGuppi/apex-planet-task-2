@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero">
+
+
+        <form id="contactForm" class="form-grid">
+            <div class="input-group">
+                <input type="text" id="name" required>
+                <label for="name", style="color: aliceblue;">Your name:</label>
+            </div>
+            <br>
+            <div class="input-group">
+                <input type="text" id="number" required>
+                <label for="number", style="color: aliceblue;">Phone no:</label>
+            </div>
+            <br>
+            <div class="input-group">
+                <input type="email" id="email" required>
+                <label for="email", style="color: aliceblue;">Email id:</label>
+            </div>
+            <br>
+            <div class="input-group">
+                <textarea id="message" rows="8"></textarea>
+                <label for="message", style="color: aliceblue;">Your message:</label>
+            </div>
+            <br>
+            <button type="submit">Submit</button>
+            <div id="formMessage" style="color: limegreen; margin-top: 10px; font-weight: bold;"></div>
+        </form>
+
+
+        <div class="todo-container">
+            <h2>My To-Do List</h2>
+            <br>
+            <input type="text" id="taskInput" placeholder="Enter a task">
+            <br>
+            <button onclick="addTask()">Add Task</button>
+            <br>
+            <ul id="taskList"></ul>
+            <br>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
